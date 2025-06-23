@@ -8,7 +8,7 @@ def coincidence(lst=None, rng=None):
     
     for item in lst:
         if isinstance(item, (int, float)):
-            if start <= item < stop:
+            if (start <= item < stop) or (isinstance(item, float) and start <= item <= stop):
                 result.append(item)
     
     return result
