@@ -20,7 +20,10 @@ class Dessert:
         self._calories = value
     
     def is_healthy(self):
-        return self._calories is not None and self._calories < 200
+        try:
+            return self._calories is not None and float(self._calories) < 200
+        except (TypeError, ValueError):
+            return False
     
     def is_delicious(self):
         return True
@@ -40,4 +43,6 @@ class JellyBean(Dessert):
         self._flavor = value
     
     def is_delicious(self):
-        return self._flavor != "black licorice"
+        if self._flavor == "black licorice":
+            return False
+        return True
