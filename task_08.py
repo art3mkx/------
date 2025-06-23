@@ -1,4 +1,4 @@
-def multiply_digits(input_data=None):
+def multiply_numbers(input_data=None):
     if input_data is None:
         return None
     
