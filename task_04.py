@@ -1,4 +1,4 @@
-def swap_min_max_and_append(arr):
+def sort_list(arr):
     if len(arr) == 0:
         return arr.copy()
     
