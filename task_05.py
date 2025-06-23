@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 
-def get_future_date(days_ahead):
+def date_in_future(days_ahead):
     current_time = datetime.today()
     
     if type(days_ahead) != int:
