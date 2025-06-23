@@ -1,4 +1,4 @@
-def group_anagrams(words):
+def combine_anagrams(words):
     if not words:
         return []
 
@@ -14,5 +14,5 @@ def group_anagrams(words):
     return list(anagram_groups.values())
 
 input_words = ['cars', 'for', 'potatoes', 'racs', 'four', 'scar', 'creams', 'scream']
-result = group_anagrams(input_words)
+result = combine_anagrams(input_words)
 print(result)
